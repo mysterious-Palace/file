@@ -18,16 +18,16 @@
 <?php } ?>
 <?php if($_COOKIE["uid"]=='') { ?>
                         <div class="ibox-title" id="header">
-                            <h3>登入</h3>
+                            <h3>注册</h3>
                         </div>
                         <div class="ibox-content">
                             <div class="project-list">
-                                <a href="register.php">没有账号？去注册！</a>
+                                <a href="login.php">已有账号？去登入！</a>
                             </div>
                         </div>
                         <div class="ibox-content">
                             <div class="project-list">
-<form action="login_.php" method="post">
+<form action="register_.php" method="post">
 用户名: <input type="text" name="name"><br/>
 密码: <input type="password" name="password"><br/>
 <?php include "../api/captcha.php" ?><input type="text" name="captcha"><br/>
